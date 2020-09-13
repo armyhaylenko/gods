@@ -25,17 +25,17 @@ import (
 )
 
 const (
-	iconCPU           = "\uf35b"
-	iconDateTime      = "\uf150"
-	iconMemory        = "\uf193"
-	iconNetRX         = "\uf046"
-	iconNetTX         = "\uf05e"
-	iconPowerBattery  = "\uf080"
-	iconPowerCharging = "\uf084"
-	iconVolume        = "\uf57e"
-	iconVolumeMuted   = "\uf581"
+	iconCPU           = "CPU"
+	iconDateTime      = "Date"
+	iconMemory        = "Mem"
+	iconNetRX         = "RX"
+	iconNetTX         = "TX"
+	iconPowerBattery  = "Full/AC"
+	iconPowerCharging = "Charging"
+	iconVolume        = "Vol"
+	iconVolumeMuted   = "Muted"
 
-	fieldSeparator = " "
+	fieldSeparator = " | "
 )
 
 const (
@@ -48,10 +48,10 @@ const (
 var (
 	color   = []string{"\u0001", "\u0002", "\u0003", "\u0006"}
 	netDevs = map[string]struct{}{
-		"eth0:":      {},
+		"eth\uf58110:":      {},
 		"eth1:":      {},
 		"wlan0:":     {},
-		"wlp2s0:":    {},
+		"wlp3s0:":    {},
 		"enp0s31f6:": {},
 		"enp12s0u1:": {},
 		"ppp0:":      {},
